@@ -1,0 +1,20 @@
+1) Post request to trade
+url:- localhost:3000/api/trade
+jsonData:-
+{
+    "id":1,
+    "Type":"buy",
+    "User_id":23,
+    "symbol":"ABX",
+    "Shares":100,
+    "Price":134
+}
+
+
+2)Get request
+url:- localhost:3000/api/tradeget 
+or
+localhost:3000/api/tradeget?type=buy&userid=123
+
+3)Get request to trade
+url:- localhost:3000/api/tradewithid/1
