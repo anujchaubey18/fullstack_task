@@ -1,0 +1,4 @@
+--------------------------Query for total goals scored by a country----------
+databasename--- football_tournaments
+
+SELECT countries.name as countryname , (SELECT SUM(goals) FROM goals WHERE goals.country_id=countries.id) as totalgoals from countries ORDER BY totalgoals DESC
